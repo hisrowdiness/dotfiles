@@ -1,0 +1,61 @@
+!Font
+
+!urxvt*font: -*-uushi-medium-r-normal-*-12-*-*-*-*-*-*-* 
+!urxvt*boldFont: -*-Uushi-medium-r-normal-*-12-*-*-*-*-*-*-* 
+!urxvt*italicFont: -*-uushi-medium-r-normal-*-12-*-*-*-*-*-*-* 
+!urxvt*bolditalicFont: -*-uushi-medium-r-normal-*-12-*-*-*-*-*-*-* 
+
+URxvt.font: xft:Uushi:size=8
+URxvt.boldFont: xft:Uushi:size=8
+
+
+!urxvt*font: xft:ushi:size=14
+!urxvt*boldFont: xft:dejavu sans mono:bold:size=14
+!urxvt*italicFont: xft:dejavu sans mono:italic:size=14
+!urxvt*letterspace: -1
+!urxvt*fading: 			10
+!urxvt*fadeColor: 		#000000	
+urxvt*cursorBlink:		true
+urxvt*scrollBar:		false
+urxvt*depth:			32 
+urxvt*internalBorder: 		5
+urxvt*dynamicColors: on
+urxvt.urgentOnBell:  true
+
+!Gutterslob Visiblue
+urxvt*background:           #000000
+urxvt*foreground:           #666699
+
+
+!Colour
+urxvt*color0:               #333366
+urxvt*color8:               #333399
+
+urxvt*color1:               #6666CC
+urxvt*color9:               #9999FF
+
+urxvt*color2:               #0099CC
+urxvt*color10:              #00CCFF
+
+urxvt*color3:               #3366CC
+urxvt*color11:              #6699FF
+
+urxvt*color4:               #006699
+urxvt*color12:              #0099CC
+
+urxvt*color5:               #0066FF
+urxvt*color13:              #0099FF
+
+urxvt*color6:               #669999
+urxvt*color14:              #66CCCC
+
+urxvt*color7:               #99CCCC
+urxvt*color15:              #CCFFFF
+
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.dpi: 96
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
