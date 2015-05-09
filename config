@@ -1,0 +1,78 @@
+# Fonts defined in xfontsel (xft not yet supported)
+FONT1="-*-stlarch-*-*-*-*-*-*-*-*-*-*-*"
+FONT2="-xos4-terminus-*-r-normal-*-12-120-72-72-c-60-iso8859-1"
+
+#COLOR_BACKGROUND="#FF1f1f1f"
+#COLOR_FOREGROUND="#FFc0b18b"
+#COLOR_ICON="#FF775759"
+#COLOR_ICON="#ff8c9440"
+#COLOR_ACTIVE="#FFaf865a"
+#COLOR_OCCUPIED="#FF4A3637"
+#COLOR_URGENT="#FFd17b49"
+
+COLOR_BACKGROUND="#000000"
+COLOR_FOREGROUND="#CCFFFF"
+COLOR_ICON="#006699"
+#COLOR_ICON="#ff8c9440"
+COLOR_ACTIVE="#006699"
+COLOR_OCCUPIED="#333399"
+COLOR_URGENT="#6666CC"
+
+# Fonts defined in xfontsel (xft not yet supported)
+#FONT1="-*-stlarch-*-*-*-*-*-*-*-*-*-*-*"
+#FONT1="-*-stlarch-medium-r-normal-*-10-100-75-75-c-80-iso10646-1"
+#FONT1="-*-tewi-medium-*-*-*-*-*-*-*-*-*-*-*"
+#FONT2="-*-lemon-medium-*-*-*-10-110-*-*-m-*-*-*"
+#FONT2="-*-creep-*-*-*-*-*-*-*-*-*-*-*-*"
+#FONT2="-*-dweep-*-*-*-*-*-*-*-*-*-*-*-*"
+#FONT2="-*-gohufont-medium-*-*-*-11-*-*-*-*-*-iso10646-*"
+#FONT2="-*-creep-*-*-*-*-0-*-*-*-*-*-*-*"
+#FONT3="-xos4-terminus-*-r-normal-*-12-120-72-72-c-60-iso8859-1"
+
+#COLOR_BACKGROUND="#ff$(getXresColor background)"
+#COLOR_FOREGROUND="#ff$(getXresColor color15)"
+#COLOR_ICON="#ff$(getXresColor color4)"
+#COLOR_ACTIVE="#ff$(getXresColor color4)"
+#COLOR_OCCUPIED="#FF$(getXresColor color8)"
+#COLOR_URGENT="#FF$(getXresColor color1)"
+
+GREEN=8c9440
+GRAY=404040
+
+function F {
+        echo -n "%{F#ff$2}$1%{F-}"
+}
+
+DIV=$(F '|' $GRAY)
+
+# Height of underlines / overlines
+LINEHEIGHT="3"
+
+# Panel geometry
+#PANEL_HEIGHT=22
+#PANEL_WIDTH=2550
+#PANEL_WIDTH=1366
+#PANEL_GEOMETRY="${PANEL_WIDTH}x${PANEL_HEIGHT}+5+5"
+
+# Panel geometry
+PANEL_HEIGHT=15
+PANEL_WIDTH=''
+PANEL_GAP=8
+PANEL_GEOMETRY="${PANEL_WIDTH}x${PANEL_HEIGHT}+0+0"
+
+# Notification geometry
+NOTIFY_HEIGHT=$PANEL_HEIGHT
+NOTIFY_WIDTH=135
+NOTIFY_GEOMETRY="${NOTIFY_WIDTH}x${NOTIFY_HEIGHT}+0+0"
+
+# Duration of notifications
+DURATION=2
+
+# Monitor to display panel on
+MONITOR="$(bspc query -M | tail -n1)"
+
+# Volume change clip
+CLIP="/usr/share/sounds/freedesktop/stereo/audio-volume-change.oga"
+# Length of volume bar
+BAR_LENGTH=20
+BAR_CHAR='='
